@@ -1,15 +1,57 @@
-.menu {
+header {
+  background: #7502AF;
+}
+
+.caixa {
   display: flex;
   list-style-type: none;
+  position: relative;
+  margin: 0 auto;
 }
 
-.menu a {
+nav {
+  position: absolute;
+  top: 210px;
+  right: 0;
   text-decoration: none;
-  color: #000;
 }
 
-.menu li {
+nav li {
+  display: inline;
   margin: 0 1rem;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #470b0b;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: maroon;
+  text-decoration: underline;
+}
+
+section {
+  background: #000000;  
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+p {
+  font-size: 18px;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+  padding: 0 1rem 2rem 1rem;
 }
 
 .animes {
@@ -19,6 +61,28 @@
 
 .animes img {
   height: 25rem;
-  width: 25rem;
-  padding: 0 1rem;
+  width: 18rem;
+  padding: 3rem 1rem 0 1rem ;
+}
+
+.filmes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filmes img {
+  height: 25rem;
+  width: 18rem;
+  padding: 3rem 1rem 0 1rem;
+}
+
+.sugestoes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sugestoes img {
+  height: 25rem;
+  width: 18rem;
+  padding: 3rem 1rem 0 1rem;
 }
