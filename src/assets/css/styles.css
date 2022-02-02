@@ -2,6 +2,8 @@ header {
   background: #7502AF;
 }
 
+
+/*configuração do cabeçalho para alinhar logotipo e menu*/
 .caixa {
   display: flex;
   list-style-type: none;
@@ -9,6 +11,7 @@ header {
   margin: 0 auto;
 }
 
+/* posição do menu de navegação */
 nav {
   position: absolute;
   top: 210px;
@@ -16,11 +19,13 @@ nav {
   text-decoration: none;
 }
 
+/* alinhamento da lista do menu */
 nav li {
   display: inline;
   margin: 0 1rem;
 }
 
+/* configurações de texto do menu */
 nav a {
   text-transform: uppercase;
   color: #470b0b;
@@ -29,25 +34,26 @@ nav a {
   text-decoration: none;
 }
 
+/* comportamento ao passar o mouse sobre cada item do menu*/
 nav a:hover {
   color: maroon;
   text-decoration: underline;
 }
 
 section {
-  background: #000000; 
+  background: #000000;  
 }
 
 h1 {
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-weight: bold;  
   color: white;
-  padding: 4rem 1rem 0 1rem;
+  padding: 4rem 1rem 0 1.8rem;
 }  
 
 p {
-  font-size: 14px;
+  font-size: 13px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
   font-weight: normal;
@@ -64,7 +70,7 @@ p {
 .animes img {
   height: 25rem;
   width: 18rem;
-  padding: 2rem 1rem 0 1rem ;
+  padding: 2rem 1rem 0 1rem;
 }
 
 .filmes {
