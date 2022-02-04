@@ -14,7 +14,7 @@ header {
 /* posição do menu de navegação */
 nav {
   position: absolute;
-  top: 210px;
+  top: 180px;
   right: 0;
   text-decoration: none;
 }
@@ -40,58 +40,118 @@ nav a:hover {
   text-decoration: underline;
 }
 
-section {
+/* configuração da main */
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: conteudo;
+  padding: 1rem 0;
   background: #000000;  
 }
 
-h1 {
+/* configuração da section */
+.animes__conteudo {
+  padding: 3rem 1rem 2rem 1rem;
+}
+
+/* título da seção animes */
+.animes__titulo {
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;  
+  text-align: match-parent;
   color: white;
-  padding: 4rem 1rem 0 1.8rem;
+  padding: 0 0 0 1.5rem;
 }  
 
-p {
+
+.titulo__imagem {
   font-size: 13px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
   font-weight: normal;
   text-align: center;
-  padding: 0 1rem 2rem 1rem;
+  padding: 1rem 1rem 2rem 1rem;
 }
 
-.animes {
+/* configuração do espaço onde ficam as imagens dos animes */
+.animes__itens {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;  
 }
 
-.animes img {
+.animes__card {
+  display: grid;
+  grid-template-areas: "card-imagem";
+}
+
+/* configuração das imagens */
+.animes__card__imagem {
+  grid-area: card-imagem;
   height: 25rem;
   width: 18rem;
   padding: 2rem 1rem 0 1rem;
 }
 
-.filmes {
+
+.filmes__conteudo {
+  padding: 3rem 1rem 2rem 1rem;
+}
+
+.filmes__titulo {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;  
+  text-align: match-parent;
+  color: white;
+  padding: 0 0 0 1.5rem;
+}
+
+.filmes__itens {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; 
 }
 
-.filmes img {
+.filmes__card {
+  display: grid;
+  grid-template-areas: "card-imagem";
+}
+
+.filmes__card__imagem{
+  grid-area: card-imagem;
   height: 25rem;
   width: 18rem;
   padding: 2rem 1rem 0 1rem;
 }
 
-.sugestoes {
+.sugestoes__conteudo {
+  padding: 3rem 1rem 2rem 1rem;
+}
+
+.sugestoes__titulo {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;  
+  text-align: match-parent;
+  color: white;
+  padding: 0 0 0 1.5rem;
+}
+
+.sugestoes__itens {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;  
 }
 
-.sugestoes img {
+.sugestoes__card {
+  display: grid;
+  grid-template-areas: "card-imagem";
+}
+
+.sugestoes__card__imagem {
+  grid-area: card-imagem;
   height: 25rem;
   width: 18rem;
   padding: 2rem 1rem 0 1rem;
