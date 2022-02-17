@@ -34,7 +34,7 @@
   padding: 16px;
   display: grid;
   grid-template-columns: 2fr;
- 
+  row-gap: 8px;
 }
 
 .cartao__titulo {  
@@ -54,7 +54,7 @@
   width: 100%;
   height: 40px;
   border-radius: 10px;
-  font-size: 1rem;  
+  font-size: 0.9rem;  
 }
 
 .secao {
