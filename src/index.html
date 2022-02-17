@@ -5,127 +5,182 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/reset.css" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/mobile-navbar.css">
   <title>AnimeFun</title>
 </head>
 
 <body>
   <header>
-    <div class="caixa">
-      <h1><img src="assets/img/logo-animefun.png" alt="" Logo AnimeFun></h1>
-
-      <nav>
-        <ul>
-          <li><a href="#">Animes</a></li>
-          <li><a href="#">Filmes</a></li>
-          <li><a href="#">Sugestões</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <a class="logo" href="/">AnimiFun</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Gênero</a></li>
+        <li><a href="#">Sugestão</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="conteudo">
-    <section class="animes__conteudo">
-      <h1 class="animes__titulo">Animes</h1>
-      <div class="animes__itens">
-        <div class="animes__card">
-          <img class="animes__card__imagem" src="assets/img/Castlevania.jpg" alt="Castlevania" />
-          <p class="titulo__imagem">Castlevania</p>
-        </div>
-        <div class="animes__card">
-          <img class="animes__card__imagem"  src="assets/img/Nanatsu no Taizai.jpg" alt="Nanatsu no Taizai" />
-          <p class="titulo__imagem">Nanatsu no Taizai</p>
-        </div>
-        <div class="animes__card">
-          <img class="animes__card__imagem"  src="assets/img/Record of Ragnarok.jpg" alt="Record of Rangnarok" />
-          <p class="titulo__imagem">Record of Ragnarok</p>
-        </div>
-        <div class="animes__card">
-          <img class="animes__card__imagem"  src="assets/img/Hanyō no Yashahime.jpg" alt="Hanyō no Yashahime" />
-          <p class="titulo__imagem">Hanyō no Yashahime</p>
-        </div>
-        <div class="animes__card">
-          <img class="animes__card__imagem"  src="assets/img/mL0251_1024x1024.jpg" alt="Kakegurui" />
-          <p class="titulo__imagem">Kakegurui</p>
-        </div>
-        <div class="animes__card">
-          <img class="animes__card__imagem"  src="assets/img/The Beginning.jpg" alt="B: The Beginning" />
-          <p class="titulo__imagem">B: The Beginning</p>
-        </div>
-        <div class="animes__card">
-          <img class="animes__card__imagem"  src="assets/img/The Daily Life of the Immortal King.jpg" alt="The Daily Life of the Immortal King" />
-          <p class="titulo__imagem">The Daily Life of the Immortal King</p>
-        </div>
-        <div class="animes__card">
-          <img class="animes__card__imagem"  src="assets/img/Yakusoku no Neverland.jpg" alt="Yakusoku no Neverland" />
-          <p class="titulo__imagem">Yakusoku no Neverland</p>
-        </div>
-      </div>
+  <main class="principal">
+    <section class="secao">
+      <h1 class="titulo-secao">Animes</h1>
+      <article class="cartao">
+        <img src="assets/img/Castlevania.jpg" alt="Castlevania" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">Castlevania</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/Nanatsu no Taizai.jpg" alt="Nanatsu no Taizai" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">Nanatsu no Taizai</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/Record of Ragnarok.jpg" alt="Record of Ragnarok" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">Record of Ragnarok</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/Hanyō no Yashahime.jpg" alt="Hanyō no Yashahime" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">Hanyō no Yashahime</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/mL0251_1024x1024.jpg" alt="Kakegurui" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">Kakegurui</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/The Beginning.jpg" alt="B: The Beginning" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">B: The Beginning</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/The Daily Life of the Immortal King.jpg" alt="The Daily Life of the Immortal King" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">The Daily Life of the Immortal King</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/Yakusoku no Neverland.jpg" alt="Yakusoku no Neverland" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">Yakusoku no Neverland</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
     </section>
-
-    <section class="filmes__conteudo">
-      <h1 class="filmes__titulo">Filmes</h1>
-      <div class="filmes__itens">
-        <div class="filmes__card">
-          <img class="filmes__card__imagem" src="assets/img/A Viagem de Chihiro FILME.jpg" alt="A Viagem de Chihiro" />
-          <p class="titulo__imagem">A Viagem de Chihiro</p>
-        </div>
-        <div class="filmes__card">
-          <img class="filmes__card__imagem" src="assets/img/Naruto FILME.jpg" alt="Naruto O Filme" />
-          <p class="titulo__imagem">Naruto O Filme</p>
-        </div>
-        <div class="filmes__card">
-          <img class="filmes__card__imagem" src="assets/img/O Castelo Animado.jpg" alt="O Castelo Animado" />
-          <p class="titulo__imagem">O Castelo Animado</p>
-        </div>
-        <div class="filmes__card">
-          <img class="filmes__card__imagem" src="assets/img/Princesa Mononoke FILME.jpg" alt="Princesa Mononoke" />
-          <p class="titulo__imagem">Princesa Mononoke</p>
-        </div>
-        <div class="filmes__card">
-          <img class="filmes__card__imagem" src="assets/img/O Filme Dragon Ball Super Broly.jpg" alt="Dragon Ball Super: Broly" />
-          <p class="titulo__imagem">Dragon Ball Super: Broly</p>
-        </div>
-        <div class="filmes__card">
-          <img class="filmes__card__imagem" src="assets/img/kimi-no-na-wa.jpg" alt="Kimi No Na Wa">
-          <p class="titulo__imagem">Kimi No Na Wa</p>
-        </div>
-        <div class="filmes__card">
-          <img class="filmes__card__imagem" src="assets/img/my-hero-academia.jpg" alt="My Hero Academia">
-          <p class="titulo__imagem">My Hero Academia</p>
-        </div>
-        <div class="filmes__card">
-          <img class="filmes__card__imagem" src="assets/img/eureka.jpg" alt="Eureka Seven Hi-Evolution 1">
-          <p class="titulo__imagem">Eureka Seven Hi-Evolution 1</p>
-        </div>
-      </div>
+    <section class="secao">
+      <h1 class="titulo-secao">Filmes</h1>
+      <article class="cartao">
+        <img src="assets/img/A Viagem de Chihiro FILME.jpg" alt="A Viagem de Chihiro" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">A Viagem de Chihiro</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/Naruto FILME.jpg" alt="Naruto: O Filme" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">Naruto: O Filme</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/O Castelo Animado.jpg" alt="O Castelo Animado" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">O Castelo Animado</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/Princesa Mononoke FILME.jpg" alt="Princesa Mononoke" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">Princesa Mononoke</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/O Filme Dragon Ball Super Broly.jpg" alt="Dragon Ball Super: Broly" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">Dragon Ball Super: Broly</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/kimi-no-na-wa.jpg" alt="Kimi No Na Wa" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">Kimi No Na Wa</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/my-hero-academia.jpg" alt="My Hero Academia" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">My Hero Academia</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/eureka.jpg" alt="Eureka Seven Hi-Evolution 1" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">Eureka Seven Hi-Evolution 1</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
     </section>
-
-    <section class="sugestoes__conteudo">
-      <h1 class="sugestoes__titulo">Sugestões da Semana</h1>
-      <div class="sugestoes__itens">
-        <div class="sugestoes__card">
-          <img class="sugestoes__card__imagem" src="assets/img/blade-runner-black-lotus-1627154526281.jpg" alt="Blade Runner: Black Lotus">
-          <p class="titulo__imagem">Blade Runner: Black Lotus</p>
-        </div>
-        <div class="sugestoes__card">
-          <img class="sugestoes__card__imagem" src="assets/img/mushoku-tensei.jpg" alt="Mushoku Tensei: Jobless Reincarnation">
-          <p class="titulo__imagem">Mushoku Tensei: Jobless Reincarnation</p>
-        </div>
-        <div class="sugestoes__card">
-          <img class="sugestoes__card__imagem" src="assets/img/black-clover.jpg" alt="Black Clover">
-          <p class="titulo__imagem">Black Clover</p>
-        </div>
-        <div class="sugestoes__card">
-          <img class="sugestoes__card__imagem" src="assets/img/strongest-sage.jpg" alt="The Strongest Sage With the Weakest Crest">
-          <p class="titulo__imagem">The Strongest Sage With the Weakest Crest</p>
-        </div>
-      </div>
+    <section class="secao">
+      <h1 class="titulo-secao">Sugestões da Semana</h1>
+      <article class="cartao">
+        <img src="assets/img/blade-runner-black-lotus-1627154526281.jpg" alt="Blade Runner: Black Lotus" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">Blade Runner: Black Lotus</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/mushoku-tensei.jpg" alt="Mushoku Tensei: Jobless Reincarnation" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">Mushoku Tensei: Jobless Reincarnation</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/black-clover.jpg" alt="Black Clover" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">Black Clover</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
+      <article class="cartao">
+        <img src="assets/img/strongest-sage.jpg" alt="The Strongest Sage With the Weakest Crest" class="cartao__imagem">
+        <div class="cartao__conteudo">
+          <p class="cartao__titulo">The Strongest Sage With the Weakest Crest</p>
+          <button class="cartao__botao cartao__botao--play"><i class="fa fa-play-circle-o">Assistir</i></button>
+        </div>          
+      </article>
     </section>
   </main>
-  <footer class="rodape">Todos os direitos reservados &copy;2022</footer>
+  <script src="assets/js/mobile-navbar.js"></script>
 </body>
-
 </html>
